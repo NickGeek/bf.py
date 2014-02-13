@@ -33,6 +33,7 @@ def interpret(code):
 			if len(memory)-1 < cell:
 				memory.append(0)
 		elif c == "<":
+			#Move to the previous cell
 			if cell > 0:
 				cell -= 1
 			else:
@@ -44,8 +45,10 @@ def interpret(code):
 			#Add the value of a string to the cell
 			memory[cell] = ord(str(input(".. ")))
 		elif c == "[":
+			#Loop start
 			pass
 		elif c == "]":
+			#Loop end
 			pass
 
 
