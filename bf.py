@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 #TODO:
-#[]
-#Reading from a file
+#while loop
 
 from sys import argv as arg
+from sys import exit
 
 #Setup the memory
 memory = [0]
@@ -69,3 +69,12 @@ try:
 	filename = arg[1]
 except:
 	interactive()
+
+try:
+	codeFile = open(filename, "r")
+except:
+	print("Error opening file.")
+	exit(1)
+
+for line in codeFile:
+	print(interpret(line))
