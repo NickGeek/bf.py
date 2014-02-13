@@ -67,14 +67,8 @@ def interactive():
 
 try:
 	filename = arg[1]
+	codeFile = open(filename, "r")
+	for line in codeFile:
+		print(interpret(line))
 except:
 	interactive()
-
-try:
-	codeFile = open(filename, "r")
-except:
-	print("Error opening file.")
-	exit(1)
-
-for line in codeFile:
-	print(interpret(line))
