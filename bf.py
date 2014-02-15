@@ -22,11 +22,16 @@ def interpret(code):
 	for c in code:
 		if c == "+":
 			#Increment the cell
-			memory[cell] += 1
+			if memory[cell] < 255:
+				memory[cell] += 1
+			else:
+				memory[cell] = 0
 		elif c == "-":
 			#Decrement the cell
 			if memory[cell] > 0:
 				memory[cell] -= 1
+			else:
+				memory[cell] = 255
 		elif c == ">":
 			#Move to the next cell/create it
 			cell += 1
