@@ -2,7 +2,7 @@
 
 """
 Written by Nick Webster under the MPL 2.0
-Have fun
+Have fun!
 """
 #TODO:
 #while loop
