@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+
+"""
+Written by Nick Webster under the MPL 2.0
+Have fun
+"""
+
 #TODO:
 #while loop
 
